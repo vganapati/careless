@@ -483,6 +483,7 @@ class DataManager():
             elif parser.image_layers > 0:
                 from careless.models.scaling.image import NeuralImageScaler
                 n_images = np.max(BaseModel.get_image_id(self.inputs)) + 1
+                breakpoint()
                 scaling_model = NeuralImageScaler(
                     parser.image_layers,
                     n_images,
